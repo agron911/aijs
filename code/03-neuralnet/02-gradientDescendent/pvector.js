@@ -28,7 +28,7 @@ pv.neg = function (p) {
 pv.norm = function (p) {
   let norm = 0
   for (let k in p) {
-    norm += p[k] * p[k]
+    norm += Math.abs(p[k]) 
   }
   return norm
 }
